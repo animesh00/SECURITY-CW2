@@ -20,7 +20,7 @@ const Register = () => {
   const [usertype, setUserType] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
-  // const [passwordStrength, setPasswordStrength] = useState(null);
+  //const [passwordStrength, setPasswordStrength] = useState(null);
 
   const [errors, setErrors] = useState({});
 
@@ -29,7 +29,7 @@ const Register = () => {
     let isValid = true;
 
     if (!fullname.trim()) {
-      newErrors.fullname = "Full Name is required";
+      newErrors.fullname = "Full Name is required"; styled:
       isValid = false;
     }
     if (!email.trim()) {
@@ -162,8 +162,8 @@ const Register = () => {
 
               <div className="register__form">
                 <div className="user">
-                  <img src={userIcon} alt="" style={{ width: "80px", height: "80px" }} /> 
-                  
+                  <img src={userIcon} alt="" style={{ width: "80px", height: "80px" }} />
+
                 </div>
                 <h2>Register</h2>
 
