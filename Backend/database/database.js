@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-// Load environment variables from the .env file
+
 dotenv.config();
 
 // Function to connect to the database using Mongoose

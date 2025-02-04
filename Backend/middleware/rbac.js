@@ -22,8 +22,9 @@ const rbac = (roles) => {
     }
 
     console.log(`RBAC: Access granted for user role ${req.user.role}`);
-    next(); // User has the necessary role, proceed to the next middleware or controller
+    next(); 
   };
 };
 
 module.exports = rbac;
+

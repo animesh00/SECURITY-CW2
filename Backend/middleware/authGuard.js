@@ -19,8 +19,8 @@ const authRateLimiter = rateLimit({
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.SMTP_EMAIL, // **Your Gmail Address**
-    pass: process.env.SMTP_PASSWORD, // **Your Gmail App Password**
+    user: process.env.SMTP_EMAIL, 
+    pass: process.env.SMTP_PASSWORD, 
   },
 });
 
@@ -98,5 +98,5 @@ module.exports = {
   authGuard,
   authRateLimiter,
   sendOtpEmail,
-  generateToken, // Exported so it can be used in login and signup
+  generateToken, 
 };
